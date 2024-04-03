@@ -10,7 +10,7 @@ internal class Program
 
         do
         {
-            Console.WriteLine("TIME CONVERTER\n");
+            Console.WriteLine("\nTIME CONVERTER\n");
             Console.WriteLine("Time Conversions");
             Console.WriteLine("1. Seconds to Minutes");
             Console.WriteLine("2. Minutes to Hours");
@@ -30,13 +30,13 @@ internal class Program
                     {
                         Console.WriteLine(seconds + " second is equivalent to " + minutes + " minute.");
                     }
-                    else if (minutes == 1)
+                    else if (minutes > 1)
                     {
-                        Console.WriteLine(seconds + " seconds is equivalent to " + minutes + " minute.");
+                        Console.WriteLine(seconds + " seconds is equivalent to " + minutes + " minutes.");
                     }
                     else
                     {
-                        Console.WriteLine(seconds + " seconds is equivalent to " + minutes + " minutes.");
+                        Console.WriteLine(seconds + " seconds is equivalent to " + minutes + " minute.");
                     }
                     break;
 
@@ -48,13 +48,13 @@ internal class Program
                     {
                         Console.WriteLine(minutes2 + " minute is equivalent to " + hours + " hour.");
                     }
-                    else if (hours == 1)
+                    else if (hours > 1)
                     {
-                        Console.WriteLine(minutes2 + " minutes is equivalent to " + hours + "hour.");
+                        Console.WriteLine(minutes2 + " minutes is equivalent to " + hours + "hours.");
                     }
                     else
                     {
-                        Console.WriteLine(minutes2 + " minutes is equivalent to " + hours + " hours.");
+                        Console.WriteLine(minutes2 + " minutes is equivalent to " + hours + " hour.");
                     }
                     break;
 
@@ -66,13 +66,13 @@ internal class Program
                     {
                         Console.WriteLine(hours2 + " hour is equivalent to " + days + " day.");
                     }
-                    else if (days == 1)
+                    else if (days > 1)
                     {
-                        Console.WriteLine(hours2 + " hours is equivalent to " + days + " day.");
+                        Console.WriteLine(hours2 + " hours is equivalent to " + days + " days.");
                     }
                     else
                     {
-                        Console.WriteLine(hours2 + " hours is equivalent to " + days + " days.");
+                        Console.WriteLine(hours2 + " hours is equivalent to " + days + " day.");
                     }
                     break;
 
@@ -84,13 +84,13 @@ internal class Program
                     {
                         Console.WriteLine(days2 + " day is equivalent to " + months + " month.");
                     }
-                    else if (months == 1)
+                    else if (months > 1)
                     {
-                        Console.WriteLine(days2 + " days is equivalent to " + months + " month.");
+                        Console.WriteLine(days2 + " days is equivalent to " + months + " months.");
                     }
                     else
                     {
-                        Console.WriteLine(days2 + " days is equivalent to " + months + " months.");
+                        Console.WriteLine(days2 + " days is equivalent to " + months + " month.");
                     }
                     break;
 
@@ -98,7 +98,6 @@ internal class Program
                     Console.WriteLine("Invalid Input. Please choose numbers 1 to 4 only in the Time Conversions.");
                     break;
             }
-            while (time > 0) ;
-        }
+        } while (time > 0 && time < 5);
     }
 }
